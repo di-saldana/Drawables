@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:background="@drawable/rectangulo"
+        android:padding="5dp"
         android:text="Hello World!"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,13 +22,15 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="256dp"
-        android:layout_height="190dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:background="@drawable/estados_boton"
         android:text="Button"
-        android:background="@drawable/rectangulo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:backgroundTint="@null"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
