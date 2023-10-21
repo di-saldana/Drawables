@@ -17,6 +17,7 @@
         android:background="@drawable/rectangulo"
         android:padding="5dp"
         android:text="Hello World!"
+        android:textColor="@color/black"
         android:textAlignment="center"/>
 
     <Button
