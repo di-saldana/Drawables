@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -10,10 +16,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_margin="5dp"
         android:background="@drawable/rectangulo"
         android:padding="5dp"
         android:text="Hello World!"
@@ -41,11 +44,24 @@
         android:layout_margin="5dp"/>
 
     <SeekBar
+        android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/progressBar"
-        android:max="10000"
         android:layout_margin="5dp"
-        android:progressDrawable="@drawable/color_level_list"/>
+        android:max="10000"
+        android:progressDrawable="@drawable/color_level_list" />
 
+    <es.ua.eps.drawables.TextViewCitas
+        android:id="@+id/textCitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:layout_below="@id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
 </RelativeLayout>
+</ScrollView>
