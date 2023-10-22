@@ -63,5 +63,13 @@
         android:layout_below="@id/seekBar"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"/>
+
+    <es.ua.eps.drawables.EdicionBorrable
+        android:id="@+id/borrable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/textCitas"/>
+
 </RelativeLayout>
 </ScrollView>
