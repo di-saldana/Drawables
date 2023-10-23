@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/editBox">
+
+        <EditText android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="50dp"
+            android:hint="Write something"/>
+        <Button android:id="@+id/button"
+            android:layout_width="35dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="X"/>
+    </LinearLayout>
+
+    <TextView
+    android:id="@+id/textViewSnack"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:text="Lista de tareas"
+    android:textColor="@color/black"
+    android:layout_below="@id/editBox"/>
+
+</RelativeLayout>

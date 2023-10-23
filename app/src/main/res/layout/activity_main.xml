@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -104,5 +108,14 @@
         android:layout_marginBottom="15dp"
         android:layout_below="@id/graficaBox"/>
 
+    <es.ua.eps.drawables.EdicionBorrableSnackbar
+        android:id="@+id/snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@id/borrableNotificacion"
+    />
+
 </RelativeLayout>
 </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
