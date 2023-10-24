@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
     android:id="@+id/ScrollView"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -32,10 +31,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/estados_boton"
         android:text="Button"
-        app:backgroundTint="@null"
-        android:layout_margin="5dp"/>
+        app:backgroundTint="@null" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -115,6 +117,53 @@
         android:layout_marginBottom="15dp"
         android:layout_below="@id/borrableNotificacion"
     />
+
+    <LinearLayout
+        android:id="@+id/dialogoBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/snackbar"
+        android:layout_margin="20dp">
+
+    <LinearLayout
+        android:id="@+id/buttonBox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Color"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Tamaño" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/p1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/p1"/>
+    <TextView
+        android:id="@+id/p2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/p2"/>
+    </LinearLayout>
 
 </RelativeLayout>
 </ScrollView>
