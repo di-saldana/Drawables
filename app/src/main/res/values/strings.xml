@@ -19,4 +19,6 @@
         gradual progress, kaizen enables organizations and individuals to remain responsive to change,
         enhance their competitiveness, and achieve sustainable growth over time.</string>
     <string name="cancelar">Cancelar</string>
+    <string name="channel_name">Notificacion</string>
+    <string name="channel_description">Notificacion de tarea</string>
 </resources>

@@ -165,6 +165,17 @@
         android:text="@string/p2"/>
     </LinearLayout>
 
+    <Button
+        android:id="@+id/barraEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="Notificaciones en la barra de estado"
+        android:layout_below="@id/dialogoBox"/>
+
 </RelativeLayout>
 </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

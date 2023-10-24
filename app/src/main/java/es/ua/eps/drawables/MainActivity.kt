@@ -1,5 +1,6 @@
 package es.ua.eps.drawables
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         val p1 = findViewById<TextView>(R.id.p1)
         val p2 = findViewById<TextView>(R.id.p2)
 
+        val barraEstado = findViewById<Button>(R.id.barraEstado)
+
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 grafica.setPercentage(progress)
@@ -35,6 +38,11 @@ class MainActivity : AppCompatActivity() {
 
         colorButton.setOnClickListener { showDialogoColor(p1, p2) }
         tamanoButton.setOnClickListener { showDialogoTamano(p1, p2) }
+
+        barraEstado.setOnClickListener {
+            val intent = Intent(this, NotificacionesBarraEstado::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun showDialogoTamano(p1: TextView, p2: TextView) {
