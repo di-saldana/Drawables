@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         val p2 = findViewById<TextView>(R.id.p2)
 
         val barraEstado = findViewById<Button>(R.id.barraEstado)
+        val pantallaTactil = findViewById<Button>(R.id.pantallaTactil)
 
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
@@ -41,6 +42,11 @@ class MainActivity : AppCompatActivity() {
 
         barraEstado.setOnClickListener {
             val intent = Intent(this, NotificacionesBarraEstado::class.java)
+            startActivity(intent)
+        }
+
+        pantallaTactil.setOnClickListener {
+            val intent = Intent(this, PantallaTactil::class.java)
             startActivity(intent)
         }
     }

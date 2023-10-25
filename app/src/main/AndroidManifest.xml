@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Drawables"
         tools:targetApi="31">
         <activity
+            android:name=".PantallaTactil"
+            android:exported="false" />
+        <activity
             android:name=".NotificacionesBarraEstado"
             android:exported="false" />
         <activity

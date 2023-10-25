@@ -24,7 +24,7 @@ class Grafica : View {
     }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
-        val size = 1000
+        val size = 100
         setMeasuredDimension(size, size)
     }
 
