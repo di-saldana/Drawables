@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         val pantallaTactil = findViewById<Button>(R.id.pantallaTactil)
         val gestos = findViewById<Button>(R.id.gestos)
         val continuar = findViewById<Button>(R.id.botonContinuar)
+        val hilos = findViewById<Button>(R.id.hilos)
 
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
@@ -61,6 +62,11 @@ class MainActivity : AppCompatActivity() {
 
         continuar.setOnClickListener {
             val intent = Intent(this, EstilosyTemas::class.java)
+            startActivity(intent)
+        }
+
+        hilos.setOnClickListener {
+            val intent = Intent(this, EjemploHilos::class.java)
             startActivity(intent)
         }
     }

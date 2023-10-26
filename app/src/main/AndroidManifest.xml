@@ -15,6 +15,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".EjemploHilos"
+            android:exported="false" />
+        <activity
             android:name=".EstilosyTemas"
             android:exported="false" />
         <activity
