@@ -28,7 +28,7 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_marginStart="5dp"
@@ -36,7 +36,8 @@
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
         android:background="@drawable/estados_boton"
-        android:text="Button"
+        android:text="@string/button"
+        android:textAlignment="center"
         app:backgroundTint="@null" />
 
     <ProgressBar
@@ -195,6 +196,37 @@
         android:layout_marginBottom="25dp"
         android:text="Gestos"
         android:layout_below="@id/pantallaTactil"/>
+
+    <LinearLayout
+        android:id="@+id/estiloBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/gestos"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:id="@+id/estiloTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido a mi aplicación"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            style="@style/EstiloTitulo"/>
+
+        <Button
+            android:id="@+id/botonContinuar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="Continuar"
+            style="@style/EstiloBoton"/>
+    </LinearLayout>
 
 </RelativeLayout>
 </ScrollView>

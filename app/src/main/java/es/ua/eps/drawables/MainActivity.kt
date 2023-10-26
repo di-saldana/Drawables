@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // TODO: Fix text button orientation
+
         val grafica = findViewById<Grafica>(R.id.grafica)
         val seekBar = findViewById<SeekBar>(R.id.seekGrafica)
 
@@ -27,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         val barraEstado = findViewById<Button>(R.id.barraEstado)
         val pantallaTactil = findViewById<Button>(R.id.pantallaTactil)
         val gestos = findViewById<Button>(R.id.gestos)
+        val continuar = findViewById<Button>(R.id.botonContinuar)
 
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
@@ -53,6 +56,11 @@ class MainActivity : AppCompatActivity() {
 
         gestos.setOnClickListener {
             val intent = Intent(this, Gestos::class.java)
+            startActivity(intent)
+        }
+
+        continuar.setOnClickListener {
+            val intent = Intent(this, EstilosyTemas::class.java)
             startActivity(intent)
         }
     }
