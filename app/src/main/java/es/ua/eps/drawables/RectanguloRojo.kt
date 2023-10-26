@@ -37,7 +37,8 @@ class RectanguloRojo(context: Context) : View(context) {
                 mY = event.y
                 this.invalidate()
 
-//                return x >= mX && x <= mX + 50 && y >= mY && y <= mY + 50
+                // return x >= mX && x <= mX + 50 && y >= mY && y <= mY + 50
+                // TODO: Check
             }
             MotionEvent.ACTION_MOVE -> {
                 // Obtenemos el índice del puntero activo para seguir su movimiento

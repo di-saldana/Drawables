@@ -186,6 +186,16 @@
         android:text="Pantalla táctil"
         android:layout_below="@id/barraEstado"/>
 
+    <Button
+        android:id="@+id/gestos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="Gestos"
+        android:layout_below="@id/pantallaTactil"/>
+
 </RelativeLayout>
 </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
