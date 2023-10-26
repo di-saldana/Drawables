@@ -18,7 +18,7 @@
             android:name=".Corrutinas"
             android:exported="false" />
         <activity
-            android:name=".AsyncTask"
+            android:name=".AsyncTasks"
             android:exported="false" />
         <activity
             android:name=".Threads"

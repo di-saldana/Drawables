@@ -29,7 +29,7 @@ class EjemploHilos : AppCompatActivity() {
         }
 
         async.setOnClickListener {
-            val intent = Intent(this, AsyncTask::class.java)
+            val intent = Intent(this, AsyncTasks::class.java)
             startActivity(intent)
         }
 
