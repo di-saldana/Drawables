@@ -15,6 +15,15 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".Corrutinas"
+            android:exported="false" />
+        <activity
+            android:name=".AsyncTask"
+            android:exported="false" />
+        <activity
+            android:name=".Threads"
+            android:exported="false" />
+        <activity
             android:name=".EjemploHilos"
             android:exported="false" />
         <activity
