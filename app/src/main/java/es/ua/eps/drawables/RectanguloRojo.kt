@@ -7,7 +7,6 @@ import android.graphics.Paint
 import android.view.MotionEvent
 import android.view.View
 
-
 class RectanguloRojo(context: Context) : View(context) {
     private val paint = Paint()
 
@@ -33,13 +32,12 @@ class RectanguloRojo(context: Context) : View(context) {
                 // Guardamos como puntero activo el primero que se pulsa
                 // (sin haber previamente otro pulsado)
                 idPunteroActivo = event.getPointerId(0)
+
                 mX = event.x
                 mY = event.y
                 this.invalidate()
-
-                // return x >= mX && x <= mX + 50 && y >= mY && y <= mY + 50
-                // TODO: Check
             }
+
             MotionEvent.ACTION_MOVE -> {
                 // Obtenemos el índice del puntero activo para seguir su movimiento
                 val indice = event.findPointerIndex(idPunteroActivo)
@@ -47,6 +45,7 @@ class RectanguloRojo(context: Context) : View(context) {
                 mY = event.getY(indice)
                 this.invalidate()
             }
+
             // Ya no quedan más punteros en pantalla
             MotionEvent.ACTION_UP ->
                 idPunteroActivo = -1

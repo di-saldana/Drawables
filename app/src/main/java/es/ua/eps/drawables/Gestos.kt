@@ -6,8 +6,8 @@ import android.os.Bundle
 class Gestos : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gestos)
 
-        // TODO
+        val redRectangleView = RectanguloRojoGestos(this)
+        setContentView(redRectangleView)
     }
 }
